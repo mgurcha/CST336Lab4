@@ -86,7 +86,7 @@
             
         ?>
     
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="width:400px">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
            <ol class="carousel-indicators">
                <?php
