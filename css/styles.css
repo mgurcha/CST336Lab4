@@ -1,8 +1,4 @@
 body{
-    background-size: 100% 100%;
-    background-attachment: fixed;
-}
-body{
         opacity:0.9;
         width:100%;
         text-align:center;
@@ -16,7 +12,30 @@ body{
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 14px;
     color: black;
-    background-color: #fff;
+    background-color: white;
+}
+#selection{
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    width: 800px;
+    text-align:center;
+    margin: auto;
+}
+#category{
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    width: 500px;
+    text-align:center;
+    margin: auto;
+}
+#dropdown{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
 }
 #layoutDiv {
     display: inline-block;

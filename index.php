@@ -62,7 +62,7 @@
         <label for  = "vertical" ></label><label for = "vertical">Vertical</label><br />
         </div>
         <br />
-        <select id = "dropdown" name = "keyword" >
+        <select id = "dropdown" name = "category" >
         <option value = "">Select One</option>
             <option value="ocean">Sea</option>
             <option>Forest</option>
@@ -77,16 +77,14 @@
     <?php
     
         if(!isset($imageURLs)){
-            echo "<h2> Type a keyword to display a slideshow <br /> With Random Images from Pixabay.com <br /> ";
+            echo "<h2 id='selection'> Type a keyword or select a category to display a slideshow with Random Images from Pixabay.com <br /> ";
         }elseif (empty($_GET['keyword'])&&empty($_GET['category'])) {
             //print_r("hello");
-            echo "<h2> You need to select something or type a keyword. </h2>";
-    }
+            echo "<h2 id='category'> You need to select something or type a keyword. </h2>";
+        }
         else{
             
         ?>
-
-
     
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="width:400px">
           <!-- Indicators -->
@@ -122,24 +120,20 @@
             
             </div>
                   <!-- Controls -->
-      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-                
-                
-                
-                
+              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+               <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
                 
         <?php
             }
         ?>
-        
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         
     <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
