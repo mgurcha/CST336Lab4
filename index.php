@@ -46,8 +46,8 @@
             @import url("css/styles.css");
             body{
                 background-image: url('<?=$backgroundImage ?>');
-                background-repeat: no-repeat;
-                background-size: 100%;
+                background-size: 100% 100%;
+                background-attachment: fixed;
             }
         </style>
     </head>
@@ -79,7 +79,6 @@
         if(!isset($imageURLs)){
             echo "<h2 id='selection'> Type a keyword or select a category to display a slideshow with Random Images from Pixabay.com <br /> ";
         }elseif (empty($_GET['keyword'])&&empty($_GET['category'])) {
-            //print_r("hello");
             echo "<h2 id='category'> You need to select something or type a keyword. </h2>";
         }
         else{
